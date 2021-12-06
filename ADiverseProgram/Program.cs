@@ -85,6 +85,8 @@ namespace ADiverseProgram
                             agesOfPeople[i] = Convert.ToInt32(ages[i]);
                         }
 
+                        // for every person that is in the company, the cost is increased,
+                        // and the increase depends on the age of the moviegoers
                         for (int i = 0; i < agesOfPeople.Length; i++)
                         {
                             if (agesOfPeople[i] < 20)
