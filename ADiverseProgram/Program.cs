@@ -30,11 +30,13 @@ namespace ADiverseProgram
                 // if our input does not match any case, we will be sent to the default block
                 switch (option)
                 {
+                    // this option terminates our program
                     case "0":
                         Console.WriteLine("Program terminated. Have a nice day!");
                         Environment.Exit(0);
                         break;
 
+                    // this alternative (not finished)
                     case "1":
                         Console.Write("I detta alternativ kan du mata in en ålder för att ta reda på hur mycket en biljett kostar, ");
                         Console.WriteLine("samt, ta reda på hur mycket den totala kostnaden blir för ett sällskap som vill köpa biobiljetter.");
@@ -105,9 +107,10 @@ namespace ADiverseProgram
                         Console.WriteLine();
 
                         break;
-
+                    
+                    // this alternative takes our input and prints it out ten times
                     case "2":
-                        Console.Write("Make an input that will be repeated 10 times: ");
+                        Console.Write("Make an input that will be repeated ten times: ");
                         string inputToRepeat = Console.ReadLine();
 
                         Console.WriteLine();
@@ -121,6 +124,7 @@ namespace ADiverseProgram
                         Console.WriteLine();
                         break;
 
+                    // with this choice, you shall input at least three words where the third word will be output
                     case "3":
                         Console.Write("Make an input of at least three words (with only one blank between them): ");
                         var inputOfAtLeast3Words = Console.ReadLine();
@@ -142,6 +146,9 @@ namespace ADiverseProgram
                             break;
                         }
 
+                    // this is the path that will be taken if we make a wrong input
+                    // we will be informed that we've made a wrong input, and will be redirected
+                    // back to the main menu
                     default:
                         Console.WriteLine("Sorry, your input is invalid.");
                         continuingProgram = true;
